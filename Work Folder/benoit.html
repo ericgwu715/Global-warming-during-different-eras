@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Global</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand bg-info p-2" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots    
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./benoit.html">Global level</a>
+                      <a class="dropdown-item" href="./eric.html">Second Industrial Revolution</a>
+                      <a class="dropdown-item" href="./edwin.html">Factory Farming</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-12 col-md-20">
+          <div class="plot-content">
+            <h1 class="header">Global Warming 1855-2010</h1>
+            <hr>
+            <p>For this project, we wanted to tell stories of different time periods and their impact on the warming of our Earth. Later, we will look at how the Second Industrial Revolution impacted major cities who did and did not take part in the industrialization as well as US States impacted by Factory Farming.</p>
+            <p>First, I want to present to you a D3 interactive graph showing both Global and Country level changes in temperature.</p>
+            <p>For this project, we chose three counrties from each Hemisphere to represent in this graph. The green lines (United States, Germany, and Sweden) are Northern Hemisphere countries. The blue lines (Venezuela, Democratic Congo, and Indonesia) are near the equator. The red lines (Argentina, New Zealand, and South Africa) are part of the Southern Hemisphere.</p>
+            <p>The pink line is the average temperature of both land and ocean around the Globe</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-12 col-md-20">
+          <div class="plot-content">
+            <h1 class="header">A D3 Interactive Chart</h1>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="chart"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-12 col-md-20">
+          <div class="plot-content">
+            <p>As we can see, regardless of where a country is located on the earth, average temperature is rising.</p>
+            <p>The noticable 5 year increases go as follows:</p>
+            <p>1. 1870-1875 : an increase of 0.10˚C</p>
+            <p>2. 1890-1895 : +0.12˚C</p>
+            <p>3. 1935-1940 : +0.14˚C</p>
+            <p>4. 1975-1980 : +0.14˚C</p>
+            <p>5. 1990-1995 : +0.12˚C</p>
+            <p>6. 1995-2000 : +0.10˚C</p>
+            <p>There are plenty of increases over 0.05˚C, the ones mentioned are simply the most substatial. The majority of these increases happen after 1910.</p>
+            <p>There are also big decreases in average temperature as well. Only there are fewer. They are as follows:</p>
+            <p>1. 1875-1880 : a decrease of 0.12˚C</p>
+            <p>2. 1940-1945 : -0.10˚C</p>
+            <p>The Earth's average land and ocean temperatures have increased from 14.89 to 15.85 within a 155 year period. Now, this may not seem like much but here is another representation of those numbers:</p>
+            <img src="./graph/globalTemps.pdf" width="150" alt="" style="float: left; width: 100%; height: 400px;">
+            <p>As you can see, although the numbers may not seem captivating, the graph causes concern.</p>
+            <p>We see a noticable difference starting around 1910 and it has continuously gone up since.</p>
+            <p>As much as I would like to give solutions to this problem, our group has not done research into this subject. We (our group) cannot deem using more efficient energy as a solution as we have not put enough time into this research. This may be an idea of a later project, but for now, we will listen to the scientists.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  </body>
+
+</html>
